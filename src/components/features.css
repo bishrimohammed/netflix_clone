@@ -1,0 +1,36 @@
+.feature{
+    padding: 50px 12%;
+    background-color: black;
+}
+.featurewrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+ .text-col,.imgcol{
+    flex: 50%;
+    margin-bottom: 20px;
+}
+.text-col h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.imgcol img{
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width:600px) {
+    .featurewrapper{
+        flex-direction: column;
+    }
+    .feature  div:nth-child(2),.feature div:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .feature h2{
+        font-size: 30px;
+    }
+}
